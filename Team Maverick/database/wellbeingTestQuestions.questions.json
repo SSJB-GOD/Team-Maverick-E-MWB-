@@ -1,0 +1,288 @@
+[{
+  "_id": "1",
+  "questionText": "Over the past two weeks, how often have you felt little interest or pleasure in doing things?",
+  "choices": [
+    {
+      "option": "Strongly Agree",
+      "score": 15
+    },
+    {
+      "option": "Agree",
+      "score": 10
+    },
+    {
+      "option": "Somewhat Agree",
+      "score": 7
+    },
+    {
+      "option": "Neutral",
+      "score": 5
+    },
+    {
+      "option": "Somewhat Disagree",
+      "score": 3
+    },
+    {
+      "option": "Disagree",
+      "score": 1
+    },
+    {
+      "option": "Strongly Disagree",
+      "score": 0
+    }
+  ]
+},
+{
+  "_id": "2",
+  "questionText": "Have you been feeling down, depressed, or hopeless over the past two weeks?",
+  "choices": [
+    {
+      "option": "Strongly Agree",
+      "score": 15
+    },
+    {
+      "option": "Agree",
+      "score": 10
+    },
+    {
+      "option": "Somewhat Agree",
+      "score": 7
+    },
+    {
+      "option": "Neutral",
+      "score": 5
+    },
+    {
+      "option": "Somewhat Disagree",
+      "score": 3
+    },
+    {
+      "option": "Disagree",
+      "score": 1
+    },
+    {
+      "option": "Strongly Disagree",
+      "score": 0
+    }
+  ]
+},
+{
+  "_id": "3",
+  "questionText": "How often do you find it difficult to fall or stay asleep, or sleep too much?",
+  "choices": [
+    {
+      "option": "Never",
+      "score": 0
+    },
+    {
+      "option": "Rarely",
+      "score": 3
+    },
+    {
+      "option": "Sometimes",
+      "score": 5
+    },
+    {
+      "option": "Often",
+      "score": 10
+    },
+    {
+      "option": "Always",
+      "score": 15
+    }
+  ]
+},
+{
+  "_id": "4",
+  "questionText": "Over the past two weeks, how often have you felt tired or had little energy?",
+  "choices": [
+    {
+      "option": "Always",
+      "score": 15
+    },
+    {
+      "option": "Often",
+      "score": 10
+    },
+    {
+      "option": "Sometimes",
+      "score": 5
+    },
+    {
+      "option": "Rarely",
+      "score": 3
+    },
+    {
+      "option": "Never",
+      "score": 0
+    }
+  ]
+},
+{
+  "_id": "5",
+  "questionText": "In the past two weeks, have you been feeling more irritable or frustrated than usual?",
+  "choices": [
+    {
+      "option": "Strongly Agree",
+      "score": 15
+    },
+    {
+      "option": "Agree",
+      "score": 10
+    },
+    {
+      "option": "Somewhat Agree",
+      "score": 7
+    },
+    {
+      "option": "Neutral",
+      "score": 5
+    },
+    {
+      "option": "Somewhat Disagree",
+      "score": 3
+    },
+    {
+      "option": "Disagree",
+      "score": 1
+    },
+    {
+      "option": "Strongly Disagree",
+      "score": 0
+    }
+  ]
+},
+{
+  "_id": "6",
+  "questionText": "How often do you feel that you are a failure, or have let yourself or your family down?",
+  "choices": [
+    {
+      "option": "Always",
+      "score": 15
+    },
+    {
+      "option": "Often",
+      "score": 10
+    },
+    {
+      "option": "Sometimes",
+      "score": 5
+    },
+    {
+      "option": "Rarely",
+      "score": 3
+    },
+    {
+      "option": "Never",
+      "score": 0
+    }
+  ]
+},
+{
+  "_id": "7",
+  "questionText": "Have you noticed changes in your appetite or weight (either eating too much or not eating enough) recently?",
+  "choices": [
+    {
+      "option": "Yes, a lot",
+      "score": 15
+    },
+    {
+      "option": "Yes, a little",
+      "score": 10
+    },
+    {
+      "option": "No change",
+      "score": 5
+    },
+    {
+      "option": "No, not at all",
+      "score": 0
+    }
+  ]
+},
+{
+  "_id": "8",
+  "questionText": "How often do you feel like life is not worth living or that you're better off dead?",
+  "choices": [
+    {
+      "option": "Never",
+      "score": 0
+    },
+    {
+      "option": "Rarely",
+      "score": 3
+    },
+    {
+      "option": "Sometimes",
+      "score": 5
+    },
+    {
+      "option": "Often",
+      "score": 10
+    },
+    {
+      "option": "Always",
+      "score": 15
+    }
+  ]
+},
+{
+  "_id": "9",
+  "questionText": "Have you had trouble concentrating on things, such as reading the newspaper or watching television, over the past two weeks?",
+  "choices": [
+    {
+      "option": "Strongly Agree",
+      "score": 15
+    },
+    {
+      "option": "Agree",
+      "score": 10
+    },
+    {
+      "option": "Somewhat Agree",
+      "score": 7
+    },
+    {
+      "option": "Neutral",
+      "score": 5
+    },
+    {
+      "option": "Somewhat Disagree",
+      "score": 3
+    },
+    {
+      "option": "Disagree",
+      "score": 1
+    },
+    {
+      "option": "Strongly Disagree",
+      "score": 0
+    }
+  ]
+},
+{
+  "_id": "10",
+  "questionText": "Over the past two weeks, how often have you felt physically sluggish or have been moving or speaking slower than usual?",
+  "choices": [
+    {
+      "option": "Always",
+      "score": 15
+    },
+    {
+      "option": "Often",
+      "score": 10
+    },
+    {
+      "option": "Sometimes",
+      "score": 5
+    },
+    {
+      "option": "Rarely",
+      "score": 3
+    },
+    {
+      "option": "Never",
+      "score": 0
+    }
+  ]
+}]

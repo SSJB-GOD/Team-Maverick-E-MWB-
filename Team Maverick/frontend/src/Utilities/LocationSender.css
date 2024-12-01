@@ -1,0 +1,107 @@
+/* LocationSender.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap");
+
+/* Main container for LocationSender */
+.location-container {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  border: 1px solid #e2e8f0;
+}
+
+/* Header for LocationSender */
+.location-header {
+  margin-top: 0;
+  color: #2d3748;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Input field for phone number */
+.phone-number-input {
+  width: 96%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #cbd5e0;
+  background-color: #f9fafc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.phone-number-input:focus {
+  border-color: #3182ce;
+  outline: none;
+}
+
+/* Button styles */
+.location-button {
+  background-color: #3182ce;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.location-button:hover {
+  background-color: #2b6cb0;
+}
+
+/* Map container styling */
+.map-container {
+  width: 100%;
+  margin-top: 25px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  height: 300px;
+  overflow: hidden;
+}
+
+/* Message displayed when location is shared */
+.location-message-sent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #38a169;
+  font-size: 1.1rem;
+  margin-top: 12px;
+}
+
+.location-tick-mark {
+  font-size: 24px;
+  margin-left: 8px;
+  color: #38a169;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .location-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .location-header {
+    font-size: 1.6rem;
+  }
+
+  .phone-number-input,
+  .location-button {
+    font-size: 0.95rem;
+  }
+
+  .map-container {
+    height: 250px;
+  }
+}

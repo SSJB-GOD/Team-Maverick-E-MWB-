@@ -1,0 +1,127 @@
+.app-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-left: 15px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+/* Header Styles */
+.app-container > .header {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  padding: 15px;
+  width: 500px;
+  border-radius: 5px;
+  margin-top: 100px;
+  margin-left: 390px;
+}
+
+.header h1 {
+  flex: 1;
+  text-align: center;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  color: #ffcccb;
+}
+
+/* Form Styles */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  padding-top: -100;
+  height: auto;
+  /* position: absolute; */
+}
+
+.task-form input,
+.task-form select,
+.task-form button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+#task-list {
+  margin-top: 30px;
+}
+.task-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+#ts .task-form button:hover {
+  background-color: #0056b3;
+}
+
+.task-item {
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  gap: 200px;
+}
+.task-item > h3 {
+  padding: 10px;
+}
+
+.task-item h3 {
+  margin: 0;
+  color: #333;
+}
+
+.task-item button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background-color: #0056b3;
+}
+.task-item button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+}
+#task-list > h3 {
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+}
+#task-list > p {
+  margin-left: 10px;
+}
+
+.task-item button:hover {
+  background-color: #0056b3;
+}

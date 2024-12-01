@@ -1,0 +1,46 @@
+.success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f9fafb;
+  color: #2d3748;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.checkmark-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #38a169; /* A muted green for a professional look */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.checkmark {
+  color: #ffffff;
+  font-size: 50px; /* Adjust the size to fit the circle */
+  line-height: 0; /* Ensure there’s no additional space under the character */
+  animation: fadeIn 0.4s ease-in-out forwards;
+}
+
+.success-message {
+  font-size: 1.2rem;
+  color: #2d3748;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "_id": {
+      "$oid": "6735e771e68809e9c893a7ff"
+    },
+    "query": "I'm feeling hopeless",
+    "response": "I'm really sorry to hear that. Remember, you're not alone. It's okay to reach out for support, and I'm here to listen."
+  },
+  {
+    "_id": {
+      "$oid": "6735e771e68809e9c893a800"
+    },
+    "query": "I don't see a point in anything anymore",
+    "response": "I'm here for you. It might be helpful to talk to someone you trust or consider reaching out to a professional for support."
+  },
+  {
+    "_id": {
+      "$oid": "6735e771e68809e9c893a801"
+    },
+    "query": "I feel so alone",
+    "response": "I'm really sorry you're feeling this way. Is there someone you can reach out to for support? You're not as alone as you might think."
+  },
+  {
+    "_id": {
+      "$oid": "6735e771e68809e9c893a802"
+    },
+    "query": "I can't stop crying",
+    "response": "Crying can be a way to release emotions. It's okay to express how you feel. Remember, you are not alone in this."
+  },
+  {
+    "_id": {
+      "$oid": "6735e771e68809e9c893a803"
+    },
+    "query": "I'm worthless",
+    "response": "I'm truly sorry that you're feeling this way. Remember, your feelings don't define your worth. You're important and valued."
+  },
+  {
+    "_id": {
+      "$oid": "6735eff6ad202300bb83e57c"
+    },
+    "query": "I'm feeling hopeless",
+    "response": "This is a mocked AI response for: I'm feeling hopeless",
+    "_class": "com.infosys.ChatLog.model.MongoChatLog"
+  },
+  {
+    "_id": {
+      "$oid": "6735f4fbd003613c7ce075d9"
+    },
+    "query": "I'm feeling hopeless",
+    "response": "This is a mocked AI response for: I'm feeling hopeless",
+    "timestamp": {
+      "$date": "2024-11-14T13:02:51.568Z"
+    },
+    "_class": "com.infosys.ChatLog.model.MongoChatLog"
+  }
+]

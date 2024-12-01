@@ -1,0 +1,151 @@
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  /* padding: 0; */
+
+  text-align: center;
+  width: 1400px;
+  height: auto;
+  padding: 0px;
+}
+
+/* Heading */
+.body > h1 {
+  font-size: 2.5rem;
+  color: #007bff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 20px 0;
+  text-shadow: 2px 2px #b2ebf2;
+}
+
+/* Search Bar */
+.search-bar {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.search-bar > input {
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  padding-right: 70px;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  /* margin-top: 00px; */
+}
+
+.category-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-color: #e0f7fa;
+  color: #007bff;
+  width: auto;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.category-button:hover,
+.category-button.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Video List */
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.video-list > .video-card {
+  width: 250px;
+  text-align: left;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.video-list > .video-card:hover {
+  transform: scale(1.05);
+}
+
+.video-list > .video-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.video-list > .video-card h3 {
+  font-size: 16px;
+  margin: 10px;
+  color: #333;
+}
+
+.video-player {
+  margin-top: 00px;
+  padding: 20px;
+}
+.back-button {
+  background-color: blueviolet;
+  font-weight: bold;
+  margin: 20px;
+  color: white;
+  width: 100px;
+  padding-left: -10px;
+  position: absolute;
+
+  margin-left: -130px;
+}
+.video-player .back-button {
+  background-color: #0056b3;
+  font-weight: bold;
+  margin: 20px;
+  color: white;
+  width: 100px;
+  padding-left: -10px;
+  position: absolute;
+  margin-left: -130px;
+  text-align: center; 
+}
+.back-button:hover {
+  color: white;
+  background-color: #0c3c6eda;
+}

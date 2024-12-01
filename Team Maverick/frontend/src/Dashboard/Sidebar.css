@@ -1,0 +1,26 @@
+.sidebar {
+  background-color: #173d32;
+  color: white;
+  padding: 20px;
+  height: 100%;
+}
+
+.sidebar h2 {
+  color: #b1c9b7;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  color: #88c399; /* Highlight color */
+}

@@ -1,0 +1,105 @@
+/* Reset some basic styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #b1c9b7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-container {
+  display: flex;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+}
+
+.image-container {
+  flex: 1.5; /* Increased flex value to give more space to the image */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  overflow: hidden;
+  /* Ensure image fits in the container */
+}
+
+.image-container img {
+  max-width: 700px; /* Further increased maximum width of the image */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.form-container {
+  flex: 1; /* Take up half of the container */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange children vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 20px; /* Add some padding */
+}
+
+h2 {
+  margin: 0 0 16px 0; /* Remove top margin and keep bottom margin */
+  color: #333;
+  font-weight: 600;
+  text-align: center; /* Center the heading */
+  font-size: 2em;
+}
+
+label {
+  margin-top: 12px; /* Space above the label */
+  display: block;
+  text-align: left; /* Keep labels aligned to the left */
+  font-weight: bold;
+  color: #555;
+  font-size: 1.2em;
+}
+
+.required {
+  color: rgb(3, 58, 3);
+  margin-left: 4px; /* Space between label and asterisk */
+}
+
+.input-field {
+  background-color: #e6ffe6; /* Light green background */
+  border: 1px solid #062f02; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 12px; /* Padding inside the input */
+  width: 300%; /* Increase the width */
+  max-width: 600px; /* Maximum width for responsiveness */
+  margin-top: 8px; /* Space above the field */
+  margin-bottom: 16px; /* Space below each field */
+  outline: none; /* Remove default outline */
+  transition: border-color 0.3s, background-color 0.3s; /* Smooth transition for focus */
+  font-size: 1em; /* Text size */
+}
+
+.input-field:focus {
+  border-color: #4caf50; /* Dark green when focused */
+  background-color: #ffffff; /* Change to white on focus */
+}
+
+button {
+  width: 100%; /* Full width for the button */
+  max-width: 400px; /* Consistent max width */
+  padding: 12px;
+  margin-top: 10px; /* Space above button */
+  border: none;
+  border-radius: 5px;
+  background-color: #1b6514; /* Dark green */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1em; /* Set font size */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #357abd; /* Change color on hover */
+}
