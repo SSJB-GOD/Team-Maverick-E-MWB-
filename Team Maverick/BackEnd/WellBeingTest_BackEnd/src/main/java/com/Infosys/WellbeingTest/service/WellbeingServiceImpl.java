@@ -61,7 +61,7 @@ public class WellbeingServiceImpl implements WellbeingService {
         WellbeingTest wellbeingTest = new WellbeingTest();
         wellbeingTest.setUserId(wellbeingTestDTO.getUserId());  // Set the user_id
         wellbeingTest.setScore(score.get());
-        wellbeingTest.setTaken_at(LocalDateTime.now());
+        wellbeingTest.setTakenAt(LocalDateTime.now());
         wellbeingTest.setStatus(determineStatus(score.get()));
 
         // Save the wellbeingTest object to the repository
@@ -73,6 +73,14 @@ public class WellbeingServiceImpl implements WellbeingService {
         // Retrieve test results by user ID
         return wellbeingTestRepository.findByUserId(userId);
     }
+
+
+    @Override
+    public WellbeingTest getLatestTestResult(int userId) {
+        // Retrieve the latest test result by sorting by taken_at in descending order
+        return wellbeingTestRepository.findTopByUserIdOrderByTakenAtDesc(userId);
+    }
+
     @Override
     public List<String> getRecommendations(int id) {
         // Retrieve test by test ID

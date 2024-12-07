@@ -112,6 +112,7 @@ function LocationSender() {
     <div className="sos_container">
       <div className="container">
         <h2>Share Your Location</h2>
+        <p style={{fontSize:"17px"}}>Share your current location for immediate assistance.</p>
         <input
           type="text"
           placeholder="Enter your phone number"
@@ -124,11 +125,12 @@ function LocationSender() {
           Get Current Location
         </button>
         <div className="map">
+
           {position ? (
             <MapContainer
-              center={position}
+              // center={position}
               zoom={13}
-              style={{ height: "300px" }}
+              style={{ height: "30rem" }}
             >
               <RecenterMap position={position} />
               <TileLayer
@@ -143,7 +145,7 @@ function LocationSender() {
             <p>Loading map...</p>
           )}
         </div>
-        <p>Location: {locationName}</p>
+        <p style={{marginTop:"-13rem",fontFamily:"Arial"}}>Address: <b>{locationName}</b></p>
         <button onClick={shareLocation} className="share-button">
           Share Location
         </button>

@@ -13,12 +13,8 @@ import java.util.List;
 @Service
 public class TaskServiceImpl implements TaskService{
 
-
     @Autowired
     private TaskRepo taskRepo;
-
-
-
 
     @Override
     public Task createTask(TaskDto taskDto) {

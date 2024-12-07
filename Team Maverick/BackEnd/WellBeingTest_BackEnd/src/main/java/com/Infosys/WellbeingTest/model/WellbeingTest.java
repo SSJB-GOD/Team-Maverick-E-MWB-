@@ -21,8 +21,8 @@ public class WellbeingTest {
     @Column(name = "user_id")
     private int userId;
 
-    @Column(columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
-    private LocalDateTime taken_at;
+    @Column(columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP", name = "taken_at")
+    private LocalDateTime takenAt;
 
     private int score;  // Total score based on responses
     private String status; // Overall status like "Low", "Moderate", or "High" wellbeing

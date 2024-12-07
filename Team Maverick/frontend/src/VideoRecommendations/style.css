@@ -12,7 +12,7 @@
 /* Heading */
 .body > h1 {
   font-size: 2.5rem;
-  color: #007bff;
+  color: #333;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -30,9 +30,10 @@
 
 .search-bar > input {
   padding: 10px;
-  width: 250px;
+  width: 350px;
+  height: 3rem;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 20px;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -40,18 +41,19 @@
 .search-bar button {
   padding: 10px 20px;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 20px;
+  
   cursor: pointer;
   border: none;
-  background-color: #007bff;
+  background-color: #329930;
   color: white;
   transition: background-color 0.3s ease;
   text-align: center;
-  padding-right: 70px;
+
 }
 
 .search-bar button:hover {
-  background-color: #0056b3;
+  background-color: #4caf50;
 }
 
 /* Categories */
@@ -66,12 +68,12 @@
 
 .category-button {
   padding: 8px 12px;
-  font-size: 14px;
+  font-size: 18px;
   cursor: pointer;
   border: none;
   border-radius: 20px;
   background-color: #e0f7fa;
-  color: #007bff;
+  color: #004d40;
   width: auto;
   text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -80,24 +82,28 @@
 
 .category-button:hover,
 .category-button.selected {
-  background-color: #007bff;
+  background-color: #4caf50;
   color: white;
 }
 
 /* Video List */
 .video-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Creates flexible columns */
+  gap: 20px; /* Spacing between grid items */
+  border-radius: 10px;
+  justify-items: center; /* Centers grid items horizontally */
+  align-items: center; /* Centers grid items vertically */
+  padding: 10px; /* Optional: adds space inside the container */
 }
 
+
 .video-list > .video-card {
-  width: 250px;
+  width: 100%;
   text-align: left;
   border: none;
-  border-radius: 8px;
-  overflow: hidden;
+  border-radius: 10px;
+  /* overflow: hidden; */
   background-color: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -135,7 +141,7 @@
   margin-left: -130px;
 }
 .video-player .back-button {
-  background-color: #0056b3;
+  background-color: #004d40;;
   font-weight: bold;
   margin: 20px;
   color: white;

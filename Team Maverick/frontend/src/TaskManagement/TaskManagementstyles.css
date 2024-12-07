@@ -1,127 +1,128 @@
 .app-container {
-  max-width: 600px;
-  margin: 50px auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding-left: 15px;
+  width: 100vw;
+  height: calc(100vh - 50px); /* Leaves space for navbar */
+  margin: 50px 0 0 0; /* Top margin for navbar spacing */
+  padding: 20px; /* Padding for internal spacing */
+  font-family: "Arial", sans-serif;
 }
 
-h1 {
-  text-align: center;
-  color: #fff;
-}
-
-/* Header Styles */
-.app-container > .header {
-  display: flex;
-  align-items: center;
-  background-color: #007bff;
-  padding: 15px;
-  width: 500px;
-  border-radius: 5px;
-  margin-top: 100px;
-  margin-left: 390px;
-}
-
-.header h1 {
-  flex: 1;
-  text-align: center;
-}
-
-.back-button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.back-button:hover {
-  color: #ffcccb;
-}
-
-/* Form Styles */
 .task-form {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 400px;
-  padding-top: -100;
-  height: auto;
-  /* position: absolute; */
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 30px;
+  align-items: center; /* Align items vertically */
 }
 
 .task-form input,
 .task-form select,
 .task-form button {
-  padding: 10px;
-  font-size: 16px;
+  padding: 15px;
+  font-size: 18px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-#task-list {
-  margin-top: 30px;
+
+.task-form input {
+  flex-grow: 1;
 }
+
 .task-form button {
-  background-color: #007bff;
+  background-color: #4caf50;
   color: white;
-  border: none;
+  font-weight: bold;
   cursor: pointer;
-  position: relative;
-}
-#ts .task-form button:hover {
-  background-color: #0056b3;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.task-item {
-  align-items: center;
-  background: #f9f9f9;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  gap: 200px;
-}
-.task-item > h3 {
-  padding: 10px;
+.task-form button:hover {
+  background-color: #3a8b40;
+  transform: translateY(-3px);
 }
 
-.task-item h3 {
-  margin: 0;
+.task-lists {
+  display: flex; /* Horizontal layout for task lists */
+  gap: 20px; /* Space between High, Medium, and Low priority sections */
+  justify-content: space-evenly; /* Evenly space the task lists horizontally */
+  margin-top: 20px; /* Adds spacing between form and tasks */
+}
+
+.task-list {
+  flex: 1; /* Makes all task lists equal in width */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: calc(100vh - 150px); /* Adjust for viewport height with navbar */
+  overflow-y: auto; /* Adds scrolling for tasks if overflowing */
+}
+
+.task-list h2 {
+  font-size: 22px;
   color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e6e6e6;
+  padding-bottom: 8px;
+  text-align: center; /* Center the heading text */
 }
 
-.task-item button {
-  padding: 5px 10px;
+.task-items {
+  display: flex;
+  flex-direction: column; /* Ensures tasks are stacked vertically */
+  gap: 15px;
+}
+
+.task-card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.task-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.task-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.task-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-actions button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #3a8b40;
   border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: white;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.task-item button:hover {
-  background-color: #0056b3;
-}
-.task-item button {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-  margin-left: 5px;
-}
-#task-list > h3 {
-  display: block;
-  position: absolute;
-  margin-top: 10px;
-}
-#task-list > p {
-  margin-left: 10px;
+.task-actions button:hover {
+  background-color: #329930;
+  transform: translateY(-2px);
 }
 
-.task-item button:hover {
-  background-color: #0056b3;
+.task-actions .delete-btn {
+  background-color: #dc3545;
+}
+
+.task-actions .delete-btn:hover {
+  background-color: #b52d3b;
 }
