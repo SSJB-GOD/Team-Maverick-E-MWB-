@@ -10,6 +10,7 @@ import ManageContacts from "./SOS/ManageContacts";
 import SuccessPage from "./SOS/SuccessPage";
 import TaskManagementApp from "./TaskManagement/TaskManagementApp";
 import VideoRecommendationsApp from "./VideoRecommendations/VideoRecommendationsApp";
+import NewsApp from "./News/NewsApp";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<LoginPage />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/dashboard" element={<MainContent />} />
+          <Route path="/News" element={<NewsApp />} />
           <Route path="/assessment" element={<AssessmentPage />} />{" "}
           <Route
             path="/locationSender"

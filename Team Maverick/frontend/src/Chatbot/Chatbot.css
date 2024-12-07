@@ -8,7 +8,7 @@
 .chatbox-toggle {
   width: 50px;
   height: 50px;
-  background-color: #00796b;
+  background-color: #329930;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -32,7 +32,7 @@
 }
 
 .chatbox-header {
-  background-color: #00796b;
+  background-color: #38873b;
   color: white;
   padding: 10px;
   display: flex;
@@ -104,9 +104,10 @@
 }
 
 .chatbox-input button {
-  background-color: #00796b;
+  background-color: #329930;
   color: white;
   border: none;
+  width: 100px;
   padding: 8px 12px;
   margin-left: 10px;
   cursor: pointer;
@@ -116,12 +117,12 @@
 }
 
 .chatbox-input button:hover {
-  background-color: #005a4f;
+  background-color: #4caf50;
 }
 
 /* Toggle button styles */
 .chatbox-toggle:hover {
-  background-color: #005a4f; /* Darker green on hover */
+  background-color: #4caf50; /* Darker green on hover */
 }
 
 /* Notification badge (if needed in the future) */

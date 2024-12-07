@@ -19,8 +19,10 @@ public class Task {
 
     @Column(name = "user_id" , nullable= false)
     private int userId;
-  @Column(name="priority" , nullable = false)
-  private String priority;
+
+    @Column(name="priority" , nullable = false)
+    private String priority;
+
     private String title;
     @Column(name = "created_at")
     private LocalDateTime createdAt;

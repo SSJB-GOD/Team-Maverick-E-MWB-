@@ -8,6 +8,7 @@ import "./loginpage.css";
 const LoginPage = () => {
   const [page, setPage] = useState("login");
   const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
   const { updateState } = useContext(GlobalContext); // Access the updateState function
 
@@ -37,8 +38,16 @@ const LoginPage = () => {
     const email = event.target.email.value;
     const password = event.target.password.value;
 
+    
     const getData = async () => {
       try {
+        if (!email || !password) {
+          setError("Email and password are required");
+          return;
+        }
+    
+        setIsLoading(true);
+    
         const response = await fetch("http://localhost:8080/api/login", {
           method: "POST",
           headers: {
@@ -46,15 +55,28 @@ const LoginPage = () => {
           },
           body: JSON.stringify({ email, password }),
         });
-        const data = await response.json();
-        if (response.ok) {
-          updateState("userid", data.id); // Store userid in global context
-          navigate("/dashboard"); // Navigate without passing state
-        } else {
-          setError("Invalid credentials. Please try again.");
+    
+        // Important: Check response status explicitly
+        if(response.ok){
+          alert("Login Successful.")
         }
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(errorData.message || 'Login failed');
+          
+        }
+    
+        const data = await response.json();
+        updateState("userid", data.id);
+        localStorage.setItem('userToken', data.token);
+        navigate("/dashboard");
+    
       } catch (err) {
-        setError("An error occurred. Please try again.");
+        console.error('Login Error:', err.message);
+        setError(err.message || "An error occurred during login");
+      } finally {
+        setIsLoading(false);
       }
     };
     getData();

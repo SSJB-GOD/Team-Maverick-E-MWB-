@@ -1,0 +1,137 @@
+.news-app {
+    
+    width: 100vw;
+    margin-top: 55rem;
+    padding-top: 20px; /* Adjust based on your navbar height */
+    background-color:  transparent;
+    /* min-height: 100vh; */
+  }
+  
+  .news-app__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 20px;
+    /* background-color: #ffffff; */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: top;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .news-search-form {
+    display: flex;
+    width: 70%;
+    gap: 20px;
+    /* max-width: 500px; */
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  
+  .news-search-input {
+    
+    flex-grow: 5;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    font-size: 16px;
+    width: 40rem;
+    border: 1px solid #ddd;
+    
+  }
+  
+  .news-search-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    max-width: 200px;
+    color: white;
+    /* border: 1px solid #007bff; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .news-search-button:hover {
+    background-color: #329930;
+    
+  }
+  
+  .loading, .error {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    width: 100%;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .news-app__content {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    gap: 20px;
+    padding:10px;
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+  }
+  
+  .news-article {
+    width: 300px;
+    height: 450px; /* Fixed height */
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+  
+  .news-article:hover {
+    transform: scale(1.05);
+  }
+  
+  .news-article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .news-article h2 {
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    height: 60px; /* Fixed height for title */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .news-article p {
+    padding: 0 10px;
+    color: #666;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  
+  .news-article a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 4px;
+    align-self: flex-end;
+  }

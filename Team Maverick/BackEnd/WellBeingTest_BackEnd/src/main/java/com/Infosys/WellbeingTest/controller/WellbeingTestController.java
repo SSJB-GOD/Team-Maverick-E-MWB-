@@ -27,12 +27,40 @@ public class WellbeingTestController {
         WellbeingTest result = wellbeingService.takeTest(wellbeingTestDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(result);
     }
+//    @GetMapping("/getTestResults")
+//    public ResponseEntity<HashMap<String, Object>> getTestResults(@RequestParam("id") int userId) {
+//       HashMap<String , Object> status = new HashMap<>();
+//       status.put("status" , wellbeingService.getTestResults(userId));
+//       return ResponseEntity.ok().body(status);
+//    }
+
+
     @GetMapping("/getTestResults")
     public ResponseEntity<HashMap<String, Object>> getTestResults(@RequestParam("id") int userId) {
-       HashMap<String , Object> status = new HashMap<>();
-       status.put("status" , wellbeingService.getTestResults(userId));
-       return ResponseEntity.ok().body(status);
+        WellbeingTest latestTest = wellbeingService.getLatestTestResult(userId);
+
+        if (latestTest == null) {
+            // Return a 404 status if no test result is found for the user
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body(new HashMap<>() {{
+                        put("message", "No test results found for the user.");
+                    }});
+        }
+
+        // Prepare the response with the latest test details
+        HashMap<String, Object> response = new HashMap<>();
+        response.put("id", latestTest.getId());
+        response.put("userId", latestTest.getUserId());
+        response.put("taken_at", latestTest.getTakenAt());
+        response.put("score", latestTest.getScore());
+        response.put("status", latestTest.getStatus());
+
+        return ResponseEntity.ok().body(response);
     }
+
+
+
+
     @GetMapping("/getRecommendations")
     public ResponseEntity<HashMap<String , Object>> getRecommendations(@RequestParam("id") int id) {
 

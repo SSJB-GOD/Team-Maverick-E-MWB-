@@ -24,7 +24,7 @@
   }
   
   .start-button {
-    background-color: #2c6a4a;
+    background-color: #4caf50;  
     color: white;
     border: none;
     padding: 10px 20px;
@@ -34,7 +34,7 @@
   }
   
   .start-button:hover {
-    background-color: #1b4a33;
+    background-color: #329930;
   }
   
   .image-section {

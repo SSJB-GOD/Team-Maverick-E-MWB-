@@ -11,4 +11,7 @@ import java.util.Optional;
 public interface WellbeingTestRepo extends JpaRepository<WellbeingTest, Integer> {
      Optional<WellbeingTest> findById(int id);
      List<WellbeingTest> findByUserId(int user_id);
+//     List<WellbeingTest> findTopByUserIdOrderByTakenAtDesc(int userId);
+
+    WellbeingTest findTopByUserIdOrderByTakenAtDesc(int userId);
 }

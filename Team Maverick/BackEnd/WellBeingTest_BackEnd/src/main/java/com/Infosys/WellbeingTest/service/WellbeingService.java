@@ -16,6 +16,8 @@ public interface WellbeingService {
 
     List<String> getRecommendations(int id);
 
+    WellbeingTest getLatestTestResult(int userId);
+
     // Method to delete a test by its ID
     boolean deleteTestById(int id);
 }
